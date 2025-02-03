@@ -15,7 +15,7 @@ class Repository {
   static Repository get instance => _instance;
 
   Future<List<TarotCard>> getTarotCard() async {
-    final String response = await rootBundle.loadString('data/tarot_cards.json');
+    final String response = await rootBundle.loadString('assets/data/tarot_cards.json');
     final data = await json.decode(response);
     return (data as List).map((e) => TarotCard.fromJson(e)).toList();
   }
