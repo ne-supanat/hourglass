@@ -1,6 +1,9 @@
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
+import 'package:hourglass/page_config.dart';
 import 'package:rive/rive.dart';
 
 import '../../consts/animation_keys.dart';
@@ -90,5 +93,10 @@ class MainBloc extends Cubit<MainState> {
     _sleep?.fire();
 
     isRunning = false;
+  }
+
+  toFeelingWheel(BuildContext context) {
+    rotationTimer?.cancel();
+    context.go(GoRouteConfig.pageTarot);
   }
 }
