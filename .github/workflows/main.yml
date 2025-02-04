@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate your content
-        run: echo "Optional placeholder. Put your project's static website generator command here."
+        run: flutter build web
 
       - name: Publish current workdir (which contains generated content) to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

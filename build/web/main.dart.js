@@ -80993,7 +80993,7 @@ tf(){var s=0,r=A.X(t.eq),q,p,o,n
 var $async$tf=A.Y(function(a,b){if(a===1)return A.U(b,r)
 while(true)switch(s){case 0:o=B.by
 s=3
-return A.a2($.JM().aqE("data/tarot_cards.json"),$async$tf)
+return A.a2($.JM().aqE("assets/data/tarot_cards.json"),$async$tf)
 case 3:p=o.dv(b)
 o=J
 n=t.j
